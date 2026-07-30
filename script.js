@@ -36,8 +36,29 @@
         signupHint.classList.add('is-error');
         return;
       }
-      signupForm.hidden = true;
-      signupConfirmed.hidden = false;
+
+      var submitButton = signupForm.querySelector('button[type="submit"]');
+      submitButton.disabled = true;
+      signupHint.classList.remove('is-error');
+      signupHint.textContent = 'Sending…';
+
+      fetch('/api/subscribe', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email: email }),
+      })
+        .then(function (response) {
+          return response.json().then(function (data) {
+            if (!response.ok) throw new Error(data.error || 'Something went wrong. Please try again.');
+            signupForm.hidden = true;
+            signupConfirmed.hidden = false;
+          });
+        })
+        .catch(function (err) {
+          signupHint.textContent = err.message;
+          signupHint.classList.add('is-error');
+          submitButton.disabled = false;
+        });
     });
   }
 

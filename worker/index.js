@@ -2,9 +2,19 @@ const EMAIL_PATTERN = /.+@.+\..+/;
 const DEFAULT_NOTIFY_EMAIL = "gvwkgyh994@privaterelay.appleid.com";
 const DEFAULT_FROM = "Wedding Site <onboarding@resend.dev>";
 
-export async function onRequestPost(context) {
-  const { request, env } = context;
+export default {
+  async fetch(request, env) {
+    const url = new URL(request.url);
 
+    if (url.pathname === "/api/subscribe" && request.method === "POST") {
+      return handleSubscribe(request, env);
+    }
+
+    return env.ASSETS.fetch(request);
+  },
+};
+
+async function handleSubscribe(request, env) {
   let body;
   try {
     body = await request.json();

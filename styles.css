@@ -199,11 +199,6 @@ img { max-width: 100%; }
   margin: 0 auto;
   padding: 130px 56px 0;
 }
-.section:last-of-type,
-#kids.section,
-#attire.section-alt {
-  padding-bottom: 0;
-}
 .section-alt {
   background: var(--bg-alt);
   max-width: none;

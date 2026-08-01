@@ -1,6 +1,8 @@
 (function () {
   'use strict';
 
+  var FORMSPREE_ENDPOINT = 'https://formspree.io/f/mwvgdlwq';
+
   // Countdown
   var countdownDays = document.getElementById('countdownDays');
   if (countdownDays) {
@@ -42,14 +44,21 @@
       signupHint.classList.remove('is-error');
       signupHint.textContent = 'Sending…';
 
-      fetch('/api/subscribe', {
+      fetch(FORMSPREE_ENDPOINT, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email: email }),
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify({
+          email: email,
+          _replyto: email,
+          _subject: 'New save-the-date signup',
+        }),
       })
         .then(function (response) {
           return response.json().then(function (data) {
-            if (!response.ok) throw new Error(data.error || 'Something went wrong. Please try again.');
+            if (!response.ok) {
+              var message = (data.errors && data.errors[0] && data.errors[0].message) || 'Something went wrong. Please try again.';
+              throw new Error(message);
+            }
             signupForm.hidden = true;
             signupConfirmed.hidden = false;
           });

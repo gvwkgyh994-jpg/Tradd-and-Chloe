@@ -211,6 +211,7 @@ img { max-width: 100%; }
 }
 .section-alt > * { max-width: 1240px; margin-left: auto; margin-right: auto; }
 #known { padding-bottom: 130px; }
+#travel { padding-bottom: 130px; }
 
 .section-footnote {
   font-size: 20px;
@@ -477,6 +478,7 @@ img { max-width: 100%; }
   .section { padding: 100px 40px 0; }
   .section-alt { padding: 100px 40px; }
   #known { padding-bottom: 100px; }
+  #travel { padding-bottom: 100px; }
   .park-grid { grid-template-columns: 1fr 1fr; }
 }
 
@@ -506,6 +508,7 @@ img { max-width: 100%; }
   .section { padding: 80px 24px 0; }
   .section-alt { padding: 80px 24px; }
   #known { padding-bottom: 80px; }
+  #travel { padding-bottom: 80px; }
   .park-header { padding: 0 24px 32px; }
   .more { padding: 80px 24px; }
   .countdown { padding: 22px 20px; gap: 10px 16px; }

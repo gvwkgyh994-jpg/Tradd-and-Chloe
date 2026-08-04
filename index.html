@@ -7,7 +7,7 @@
 <meta name="description" content="Save the date: Tradd and Chloe are getting married June 4-7, 2027 in Acadia National Park, Mount Desert Island, Maine.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500;600;700&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -31,23 +31,24 @@
   <img loading="eager" src="assets/images/hero.jpg" alt="Eagle Lake, Acadia" class="hero-img">
   <div class="hero-scrim"></div>
   <div class="hero-content">
-    <svg viewBox="0 0 300 90" class="hero-flourish" fill="none" stroke="#f7f3ea" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+    <svg viewBox="0 0 300 90" class="hero-flourish" fill="none" stroke="#f5efe1" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
       <path d="M96 53 C130 52, 176 51.6, 216 52.2 C242 52.6, 268 52.9, 292 52.6"></path>
       <path d="M96 53 C122 45, 152 41, 182 45 C212 49, 242 47, 266 53"></path>
       <path d="M8 88 C10 78, 12 72, 17 69 C23 65, 30 66, 34 61 C36 56, 37 52, 43 50 C50 47, 55 49, 60 44 C63 41, 67 39, 72 41 C80 44, 88 49, 96 53 C97.4 64, 96.2 76, 97 88"></path>
-      <path d="M22 80 C28 76, 34 77, 40 73 M48 64 C53 61, 58 62, 63 58"></path>
       <path d="M32 63 C32 51, 31 39, 32 26 M32 29 C28 33, 25 36, 23 41 M32 31 C35 34, 37 37, 39 40 M32 40 C27 44, 24 47, 21 51 M32 42 C36 46, 39 48, 41 51 M32 52 C27 55, 23 58, 20 62 M32 54 C37 57, 40 60, 43 62"></path>
     </svg>
-    <h1 class="hero-title">Tradd <span class="amp">&amp;</span> Chloe</h1>
-    <div class="hero-date">JUNE 4 – 7 · 2027</div>
-    <div class="hero-location">Acadia National Park · Mount Desert Island, Maine</div>
+    <h1 class="hero-title">Tradd <span class="and">and</span> Chloe</h1>
+    <div class="hero-date">June 4 – 7 · 2027</div>
+    <div class="hero-rule"></div>
+    <div class="hero-location">Acadia National Park<br>Mount Desert Island, Maine</div>
   </div>
   <a href="#known" class="hero-scroll">Scroll</a>
 </section>
 
 <div class="countdown" id="countdown">
   <span class="countdown-label">Until the weekend</span>
-  <span class="countdown-days" id="countdownDays">— days</span>
+  <span class="countdown-days" id="countdownDays">—</span>
+  <span class="countdown-days-label">days</span>
   <span class="countdown-note">Invitations, exact times and a proper reply will follow.</span>
 </div>
 
@@ -55,18 +56,21 @@
   <div class="eyebrow">What's settled</div>
   <h2 class="section-title">Three things you can plan around</h2>
   <div class="card-grid card-grid-3">
-    <div class="card">
+    <div class="card card-sage">
       <div class="numeral">i</div>
+      <div class="divider"></div>
       <div class="card-title">The weekend</div>
       <p>Friday the 4th through Monday the 7th of June, 2027. Come Friday if you can and enjoy all the island and park have to offer.</p>
     </div>
-    <div class="card">
+    <div class="card card-tan">
       <div class="numeral">ii</div>
+      <div class="divider"></div>
       <div class="card-title">A morning ceremony</div>
       <p>Sunday morning, outdoors in the park. The hour still depends on our permit and location.  We'll post it here as soon as it's set. Don't worry, not too early!</p>
     </div>
-    <div class="card">
+    <div class="card card-grey">
       <div class="numeral">iii</div>
+      <div class="divider"></div>
       <div class="card-title">A reception to follow</div>
       <p>Food, toasts and time to connect, nearby. Venue and timing are close and will be confirmed here.</p>
     </div>
@@ -93,8 +97,9 @@
     </div>
     <div class="attire-copy">
       <p>Suits and long dresses, dressed for weather rather than a ballroom. Bring a layer you can put on and take off. Expect wind off the Atlantic and mornings to start cool.</p>
-      <div class="card">
+      <div class="card card-tan">
         <div class="card-eyebrow">Footwear, seriously</div>
+        <div class="divider"></div>
         <p>Flats, boots or block heels with good grip. We'll be standing on uneven surfaces, with a short walk in.</p>
       </div>
     </div>
@@ -105,20 +110,38 @@
   <div class="eyebrow">Travel &amp; lodging</div>
   <h2 class="section-title">Getting there, and where to sleep</h2>
   <div class="card-grid card-grid-3">
-    <div class="card">
+    <div class="card card-grey">
       <div class="card-eyebrow">By air</div>
+      <div class="divider"></div>
       <div class="card-title-sm">Bangor is closest</div>
       <p>BGR is about 55 minutes from Bar Harbor. Portland is a pretty three hours up the coast, and if fares are better, Boston and Manchester are both a five-hour drive.</p>
     </div>
     <div class="card card-dark">
       <div class="card-eyebrow">Where to stay</div>
+      <div class="divider"></div>
       <div class="card-title-sm">Book sooner than feels necessary</div>
       <p>We recommend staying in Bar Harbor. Early June starts the season and the accommodations fill fast. We'd hold something refundable now and refine later. Any room blocks we arrange will be posted here.</p>
     </div>
-    <div class="card">
+    <div class="card card-sage">
       <div class="card-eyebrow">On the island</div>
-      <div class="card-title-sm">Getting Around</div>
+      <div class="divider"></div>
+      <div class="card-title-sm">Getting around</div>
       <p>Bar Harbor has a walkable downtown with many shops and dining options to explore. The free island shuttle starts in June, but with limited routes, so some park destinations will require a car.</p>
+    </div>
+  </div>
+
+  <div class="travel-stays">
+    <div>
+      <div class="card-eyebrow" style="color: var(--gold);">Recommended stays</div>
+      <div class="stays-title">Three options in town</div>
+    </div>
+    <div class="stays-list">
+      <div class="stays-pills">
+        <div class="stay-pill">Bar Harbor Inn</div>
+        <div class="stay-pill">The Bar Harbor Villager Motel</div>
+        <div class="stay-pill">Bar Harbor Grand</div>
+      </div>
+      <p>All three are in town, with access to Island Explorer Shuttle stops and restaurants. There are Airbnb options all around the island. The other towns on the island are lovely, but will require more driving to get to some of the weekend's events.</p>
     </div>
   </div>
 </section>
@@ -144,7 +167,7 @@
       </figcaption>
     </figure>
     <figure>
-      <img loading="lazy" decoding="async" src="assets/images/park-3c.jpg" alt="A quiet pond along the carriage roads">
+      <img loading="lazy" decoding="async" src="assets/images/park-3c.jpg" alt="Biking the carriage roads">
       <figcaption>
         <div class="card-title-sm">The carriage roads</div>
         <div class="park-desc">Forty-five car-free miles of crushed stone. Rent a bike in Bar Harbor and ride the Eagle Lake loop past the bridges.</div>
@@ -158,23 +181,27 @@
   <h2 class="section-title">Things to do with kids</h2>
   <p class="kids-intro">There are lots of kid friendly options on Mount Desert Island. Here a few to get you started.</p>
   <div class="card-grid card-grid-2">
-    <div class="card">
+    <div class="card card-sage">
       <div class="card-eyebrow">Half a day</div>
+      <div class="divider"></div>
       <div class="card-title-sm">Tide pools at Ship Harbor</div>
       <p>A flat figure-eight loop out to the rocks. Go at low tide and count crabs, sea stars and periwinkles. Rubber boots are a good idea.</p>
     </div>
-    <div class="card">
+    <div class="card card-tan">
       <div class="card-eyebrow">An hour or three</div>
+      <div class="divider"></div>
       <div class="card-title-sm">Carriage roads by bike</div>
       <p>No cars, gentle grades, stone bridges to stop at. Shops in Bar Harbor rent trailers, tag-alongs and small frames — the Eagle Lake loop is the easy classic.</p>
     </div>
-    <div class="card">
+    <div class="card card-grey">
       <div class="card-eyebrow">Rainy morning</div>
+      <div class="divider"></div>
       <div class="card-title-sm">Ranger programs</div>
       <p>Sieur de Monts has a small nature center, wild gardens and a Junior Ranger booklet kids can finish in an afternoon to earn their Junior Ranger badge.</p>
     </div>
-    <div class="card">
+    <div class="card card-outline">
       <div class="card-eyebrow">Late afternoon</div>
+      <div class="divider"></div>
       <div class="card-title-sm">Echo Lake, then ice cream</div>
       <p>Warmer than the ocean, with a sandy beach and a lifeguard in season. Dry clothes in the car, then a cone on Main Street in Bar Harbor.</p>
     </div>
@@ -191,6 +218,7 @@
       <div class="signup-wrap">
         <div class="signup-confirmed" id="signupConfirmed" hidden>
           <div class="signup-confirmed-title">You're on the list</div>
+          <div class="divider"></div>
           <p>We will write when the ceremony time, venue and travel notes are set — no more than a few emails between now and June.</p>
         </div>
         <form class="signup-form" id="signupForm" novalidate>
@@ -205,7 +233,7 @@
     </div>
 
     <div class="faq-card">
-      <div class="card-eyebrow faq-eyebrow">Early questions</div>
+      <div class="faq-eyebrow">Early questions</div>
       <div class="faq-list" id="faqList">
         <div class="faq-item">
           <button class="faq-question" type="button">
@@ -249,7 +277,7 @@
             <span class="faq-icon">+</span>
           </button>
           <div class="faq-answer">
-            <p>Tradd took them all!</p>
+            <p>Tradd took all of them, on a single August vacation a few years ago, while allegedly relaxing. No stock photos here — just fair warning that June runs a little greener and foggier.</p>
           </div>
         </div>
       </div>
@@ -259,7 +287,13 @@
 </section>
 
 <footer class="footer">
-  <div class="footer-names">Tradd <span class="amp">&amp;</span> Chloe</div>
+  <svg viewBox="0 0 300 90" class="footer-flourish" fill="none" stroke="#2c3a31" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M96 53 C130 52, 176 51.6, 216 52.2 C242 52.6, 268 52.9, 292 52.6"></path>
+    <path d="M96 53 C122 45, 152 41, 182 45 C212 49, 242 47, 266 53"></path>
+    <path d="M8 88 C10 78, 12 72, 17 69 C23 65, 30 66, 34 61 C36 56, 37 52, 43 50 C50 47, 55 49, 60 44 C63 41, 67 39, 72 41 C80 44, 88 49, 96 53 C97.4 64, 96.2 76, 97 88"></path>
+    <path d="M32 63 C32 51, 31 39, 32 26 M32 29 C28 33, 25 36, 23 41 M32 31 C35 34, 37 37, 39 40 M32 40 C27 44, 24 47, 21 51 M32 42 C36 46, 39 48, 41 51"></path>
+  </svg>
+  <div class="footer-names">Tradd <span class="and">and</span> Chloe</div>
   <div class="footer-date">June 4 – 7, 2027 · Acadia National Park</div>
   <div class="footer-rule"></div>
 </footer>

@@ -8,7 +8,7 @@
   if (countdownDays) {
     var weddingDate = new Date('2027-06-04T00:00:00-04:00');
     var days = Math.max(0, Math.round((weddingDate - new Date()) / 86400000));
-    countdownDays.textContent = days.toLocaleString() + ' days';
+    countdownDays.textContent = days.toLocaleString();
   }
 
   // FAQ accordion (single item open at a time)

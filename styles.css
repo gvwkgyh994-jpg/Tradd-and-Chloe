@@ -242,6 +242,11 @@ img { max-width: 100%; }
   text-indent: 0.34em;
   opacity: 0.72;
 }
+.countdown-days-wrap {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
 .countdown-days {
   font-family: var(--font-numeral);
   font-weight: 500;
